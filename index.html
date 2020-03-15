@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hardik Singhal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <script src="https://kit.fontawesome.com/1f1dbd20ef.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+            #home
+            {
+                height:100vh;
+                background-image: url("./Images/cover.jpg");
+                background-repeat: no-repeat;
+                background-size:cover;
+
+            }
+            
+            #portfolio
+            {
+                background-color: rgb(241,241,241);
+                height:100vh;
+            }
+            #contact
+            {
+                background-color: rgb(37,41,52);
+            }
+            .header
+            {
+                position:absolute;
+                top:40%;
+                
+            }
+            .fas
+            {
+                color:#22b3ce;
+            }
+            .icon-box
+            {
+                text-align:center;
+            }
+            .description
+            {
+                font-family: Candara Light;
+            }
+            .features
+            {
+                visibility:hidden;
+            }
+            #aboutHead
+            {
+                visibility: hidden;
+                font-family: Consolas;
+            }
+            #contactHead
+            {
+                text-align:center;
+                text-decoration: underline;
+                visibility:hidden;
+                color:white;
+                font-family: Consolas;
+            }
+            .detailsDiv
+            {
+                visibility: hidden;
+                text-align: center;
+                
+            }
+            .details-image
+            {
+                visibility: hidden;
+                text-align: center;
+            }
+            .details-para
+            {
+                font-size: 22px;
+            }
+            #portfolioHead
+            {
+                text-align: center;
+                text-decoration: underline;
+                visibility: hidden;
+                font-family: Consolas;
+            }
+           #uc
+           {
+                font-size: 32px;
+                text-align:center;
+           }
+           .contact-box
+           {
+               color:#22b3ce;
+               text-align:center;
+               visibility: hidden;
+           }
+           .mail-btn
+           {
+                width:150px;
+                background-color: rgb(37,41,52);
+                color:white;
+                border: 2px,white;
+           }
+           .mail-btn:hover
+           {
+                background-color: #22b3ce;
+                border:2px,#22b3ce;
+                color:white;
+                transition: 0.8s;
+           }
+
+           .contact-para
+           {
+               font-size: 22px;
+           }
+           .contact-link
+           {
+               height:50px;
+               width:50px;
+               background-color: rgb(27,36,47);
+               color:white;
+               padding-top:10px;
+           }
+           .contact-link:hover
+           {
+                height:55px;
+                width:55px;
+               background-color: #22b3ce;
+               transition:0.7s;
+           }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar-example2" class="navbar navbar-dark bg-dark" style="position:sticky;">
+            <a class="navbar-brand" href="#">HS</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div id="home">
+                <div class="row container-fluid header">
+                    <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
+                    <div class="col-xl-6 col-lg-8 col-md-10 col-sm-10 col-12">
+                        <h1 style="text-align: center;color:white;">Hello, I'm <strong style="color:rgb(255,0,128);">Hardik Singhal</strong>.
+                            <br>I'm a full-stack web developer.</h1>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
+                </div>
+               
+            </div>
+            
+            <div id="about" class="">
+                <br><br><br>
+                <h1 style="text-align:center; text-decoration: underline;" id="aboutHead">About</h1>
+                <br><br><br>
+                <div class="row features container-fluid">
+                    <div class="col-xl-1 col-lg-12 col-md-12"></div>
+                    
+                    <div class="col-xl-10 col-lg-12 col-12 row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 icon-box">
+                            <i class="fas fa-rocket fa-5x" ></i><br>
+                            <br>
+                            <h2 class="description">Fast</h2>
+                            <p>
+                                Fast load times and lag free interaction, my highest priority.
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 icon-box">
+                            <i class="fas fa-tablet-alt fa-5x"></i><br>
+                            <br>
+                            <h2 class="description">Responsive</h2>
+                            <p>
+                                My layouts will work on any device, big or small.
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 icon-box">
+                            <i class="fas fa-shield-alt fa-5x"></i><br>
+                            <br>
+                            <h2 class="description">Secured</h2>
+                            <p>
+                                Secure login and payment gateways.
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 icon-box">
+                            <i class="fas fa-user-clock fa-5x"></i><br>
+                            <br>
+                            <h2 class="description">On-Time</h2>
+                            <p>
+                                I will deliver your project within the time-limit.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-1"></div>
+                     
+                </div><br><br><br><br>
+                <div class="row info container-fluid">
+                    <div class="col-xl-1 col-lg-1 col-md-12 col-sm-2 col-xs-12"></div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-xs-12 details-image">
+                        <img class="profilePic" src="./Images/profile.png" alt="Profile Pic" height="300px">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-xs-12 detailsDiv" >
+                        <br><br>
+                        <h3>Who's this guy ?</h3>
+                        <br><br>
+                        <p class="details-para">
+                            I'm a full-stack web developer with advanced knowledge of HTML5, CSS5, JavaScript, Jquery, PHP, Bootstrap, SQL and Angular 8.
+                        </p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12"></div>
+                </div>
+                <br><br><br><br><br>
+            </div>
+           
+            <div id="portfolio">
+                <br><br><br>
+                <h1 id="portfolioHead">Portfolio</h1>
+                <br><br><br>
+                <p id="uc">
+                    Under Construction.
+                </p>
+            </div>
+           
+            <div id="contact">
+                <br><br><br>
+                <h1 id="contactHead">Contact</h1>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+                    <div class="col-xl-4 col-lg-8 col-md-8 col-sm-10 col-xs-10 contact-box">
+                        <p class="contact-para">
+                            Have any query ? <button class="mail-btn">Mail me</button>
+                        </p>
+                        <br><br>
+                        <h3>OR</h3>
+                        <br><br>
+                        <p class="contact-para">Connect with me on social media</p>
+                        <br><br><br>
+                        <div class="row" style="text-align:center;">
+                            <div class="col-2"></div>
+                            <div class="col-2">
+                               <a href="https://www.facebook.com/profile.php?id=100010605220775" class="" >
+                                <i class="fab fa-facebook-f fa-2x contact-link"></i>
+                            </a> 
+                            </div>
+                            <div class="col-2">
+                                <a href="https://www.linkedin.com/in/hardik-singhal-705a3a186" class="" >
+                                    <i class="fab fa-linkedin-in fa-2x contact-link"></i>
+                             </a> 
+                             </div>
+                             <div class="col-2">
+                                <a href="https://www.instagram.com/mactavish02/" class="" >
+                                 <i class="fab fa-instagram fa-2x contact-link"></i>
+                             </a> 
+                             </div>
+                             <div class="col-2">
+                                <a href="https://twitter.com/HardikSinghal02" class="" >
+                                 <i class="fab fa-twitter fa-2x contact-link"></i>
+                             </a> 
+                             </div>
+                             <div class="col-2"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+                    
+                </div>
+                <br><br><br><br><br><br><br>
+            </div>
+            
+          </div>
+
+
+
+
+          <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    var positionTop = $(document).scrollTop();
+                    console.log(positionTop);
+                    if((positionTop >=188 )&&(positionTop <=844))
+                    {
+                        $('#aboutHead').addClass("animated bounceInLeft");
+                        $('#aboutHead').css("visibility","visible");
+                    }
+                    if((positionTop >=502 )&&(positionTop <=940))
+                    {
+                        $('.features').addClass("animated bounceInLeft");
+                        $('.features').css("visibility","visible");
+                    }
+                    if((positionTop >=1880 )&&(positionTop <=2440))
+                    {
+                        $('#contactHead').addClass("animated bounceInRight");
+                        $('#contactHead').css("visibility","visible");
+                    }
+                    if((positionTop >=902 )&&(positionTop <=1274))
+                    {
+                        $('.details-image').addClass("animated bounceInLeft");
+                        $('.details-image').css("visibility","visible");
+                        $('.detailsDiv').addClass("animated bounceInRight");
+                        $('.detailsDiv').css("visibility","visible");
+                    }
+                    if((positionTop >=1146 )&&(positionTop <=1781))
+                    {
+                        $('#portfolioHead').addClass("animated bounceInRight");
+                        $('#portfolioHead').css("visibility","visible");
+                    }
+                    if((positionTop >=1500 )&&(positionTop <=1900))
+                    {
+                        $('#uc').addClass("animated flip");
+                    }
+                    if(positionTop >=2300 )
+                    {
+                        $('.contact-box').addClass("animated zoomInUp");
+                        $('.contact-box').css("visibility","visible");
+                        
+                    }
+                });
+                $('.mail-btn').click(function(){
+                    window.open('mailto:hardik.singhal02@gmail.com');
+                });
+            });
+            
+        </script>
+    </body>
+</html>
